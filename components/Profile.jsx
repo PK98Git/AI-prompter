@@ -1,8 +1,8 @@
-import React from 'react'
+"use client"
 
 const Profile = () => {
   return (
-	<div>Profile</div>
+	<div>from Profile.jsx file</div>
   )
 }
 
