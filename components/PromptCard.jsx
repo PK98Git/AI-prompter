@@ -4,14 +4,16 @@ import { useState } from "react";
 import Image from "next/image";
 import { useSession } from "next-auth/react";
 import { usePathname, useRouter } from "next/navigation";
+import viewPost from "@app/view-post/page";
 
 const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
   const { data: session } = useSession();
   const pathName = usePathname();
   const router = useRouter();
+  const [promptData, setpromptData] = useState(null);
 
   const handleProfileClick = () => {
-    //console.log("handle profile click",post);
+    //console.log("handle profile click",post.prompt);
 
     if (post.creator._id === session?.user.id) return router.push("/profile");
 
@@ -19,9 +21,10 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
   };
 
     const handlePostClick = () => {
-      console.log("Post Clicked",post);
-
-       //router.push("/view-post");
+      console.log("Post Clicked", post.prompt);
+      // router.push(`/view-post/${post.prompt}?name=${post.creator.username}`);
+      router.push(`/view-post`)
+      
 
       // if (post.creator._id === session?.user.id) return router.push("/profile");
 
@@ -30,7 +33,7 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
 
 
   return (
-    <div className="prompt_card" onClick={handlePostClick}>
+    <div className="prompt_card" onClick={(data) => setCardData(data)}>
       <div className="flex justify-between items-start gap-5">
         <div
           className="flex-1 flex justify-start items-center gap-3 cursor-pointer"
