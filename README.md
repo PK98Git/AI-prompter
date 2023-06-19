@@ -24,7 +24,7 @@ Promptor is giving the developers to view and add thier own prompts which will g
 </ul></h3>
 
 ## ScreenShots
-
+<img src="./public/assets/images/Snapshot_1.png">
 
 
 ## Get Started
