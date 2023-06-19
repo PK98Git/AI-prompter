@@ -26,9 +26,17 @@ Promptor is giving the developers to view and add thier own prompts which will g
 ## ScreenShots
 <img src="./public/assets/images/Snapshot_1.png">
 
+---
 
-## Get Started
+<img src="./public/assets/images/Snapshot_2.png">
 
-We've put together some helpful guides for you to get setup with our product quickly and easily.
+---
+
+<img src="./public/assets/images/Snapshot_3.png">
+
+---
+
+<img src="./public/assets/images/Snapshot_4.png">
+
 
 
