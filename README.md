@@ -1,6 +1,6 @@
 
 
-# 👋 Welcome to AI Prmptor
+# 👋 Welcome to AI Promptor
 
   A platform for sharing and discovering AI-generated writing prompts! This
   website allows writers, creatives, and anyone interested in AI to explore and
